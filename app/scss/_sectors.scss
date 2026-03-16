@@ -7,7 +7,7 @@
   }
 
   &__content {
-    max-width: 69.375rem; // conserva la misma escala general del sitio
+    max-width: 69.375rem;
     margin: 0 auto;
   }
 
@@ -29,7 +29,7 @@
       }
 
       span {
-        color: $bluefresh; // reemplázalo por tu variable de azul acento si ya la tienes
+        color: $bluefresh;
       }
     }
 
@@ -60,16 +60,27 @@
   &__item {
     display: grid;
     grid-template-rows: 4.25rem 9.5rem;
-    background: #f7f7f8;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    appearance: none;
+    background: #ffffff;
     border-radius: 0.5rem;
     overflow: hidden;
-    text-decoration: none;
     box-shadow: 0 8px 20px rgba(5, 22, 92, 0.05);
     transition: transform 220ms ease, box-shadow 220ms ease;
 
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 14px 28px rgba(5, 22, 92, 0.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $bluefresh;
+      outline-offset: 3px;
     }
 
     @include breakpoint-down(small) {
@@ -138,7 +149,7 @@
     transform: translateY(8px);
     transition: opacity 220ms ease, transform 220ms ease;
     display: -webkit-box;
-    
+    //-webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -148,17 +159,20 @@
     }
   }
 
-  &__item:hover &__top-title {
+  &__item:hover &__top-title,
+  &__item.is-active &__top-title {
     opacity: 1;
     transform: translateY(0);
   }
 
-  &__item:hover &__name {
+  &__item:hover &__name,
+  &__item.is-active &__name {
     opacity: 0;
     transform: translateY(-8px);
   }
 
-  &__item:hover &__desc {
+  &__item:hover &__desc,
+  &__item.is-active &__desc {
     opacity: 1;
     transform: translateY(0);
   }

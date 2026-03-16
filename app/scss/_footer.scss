@@ -1,0 +1,187 @@
+.footer {
+  background-color: $darkBlue;
+  color: $white;
+  padding: 2rem;
+  text-align: center;
+
+  .container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 3fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        'logo links1 links2 cta'
+        'social links1 links2 copyright';
+      gap: 1rem;
+      justify-items: start;
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo;
+    }
+
+    img {
+      width: 139px;
+      height: 32px;
+      display: block;
+    }
+  }
+
+  &__social {
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: social;
+      align-self: end;
+    }
+
+    a {
+      display: inline-block;
+      height: 1.25rem;
+
+      svg path {
+        transition: fill 150ms ease-in-out;
+      }
+
+      &:hover svg path {
+        fill: $bluefresh;
+      }
+    }
+
+    a:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.875rem;
+
+    @include breakpoint-up(large) {
+      justify-content: space-between;
+      align-items: start;
+      font-size: 0.875rem;
+    }
+
+    &.col1 {
+      @include breakpoint-up(large) {
+        grid-area: links1;
+      }
+    }
+
+    &.col2 {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+
+      @include breakpoint-up(large) {
+        grid-area: links2;
+      }
+    }
+
+    a {
+      line-height: 2.25;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: $bluefresh;
+      }
+    }
+  }
+
+  &__cta {
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      text-align: right;
+      justify-self: end;
+    }
+
+    a.button {
+      @include breakpoint-down(medium) {
+        margin-bottom: 1.875rem;
+      }
+    }
+  }
+
+  &__contact-info {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint-up(large) {
+      align-items: flex-start;
+    }
+
+    p {
+      margin: 0.2rem 0;
+      color: $white;
+      //display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: small;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        color: $white;
+        stroke: $white;
+        flex-shrink: 0;
+      }
+
+      strong {
+        font-weight: 400;
+        color: $white;
+      }
+    }
+
+    a {
+      color: $white;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: $bluefresh;
+      }
+    }
+  }
+
+  &__copyright {
+    font-size: 0.8125rem;
+    color: $grayishBlue;
+    padding-top: 1rem;
+
+    @include breakpoint-up(large) {
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
+    }
+  }
+
+  .attribution {
+    margin-top: 4rem;
+    font-size: 0.575rem;
+  }
+}

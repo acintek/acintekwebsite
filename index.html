@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/isotipo-acintek.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app/scss/style.css" />
+
+    <title>Acintek | Soluciones Acústicas, Electroacústicas y de Control de Ruido</title>
+    <meta name="description" content="ACINTEK ofrece soluciones de aislamiento acústico, acondicionamiento acústico, control de ruido y vibraciones, diseño electroacústico y consultoría acústica.">
+    <meta name="geo.placename" content="Barranquilla">
+    <meta name="geo.region" content="CO-ATL">
+    <meta name="keywords" content="Acústica, Barranquilla, Ruido, Reverberación, Sonido">
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay has-fade"></div>
+
+      <nav class="header__nav">
+        <div class="container container--pall flex flex-jc-sb flex-ai-c">
+          <a href="#" class="header__logo">
+            <img src="images/logotipo-acintek-neg-cropped.svg" alt="ACINTEK" />
+          </a>
+
+          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <div class="header__links hide-for-mobile">
+            <a href="/ACINTEK-WEBSITE/index.html">Inicio</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#feature">Servicios</a>
+            <a href="#sectors">Sectores</a>
+            <a href="#contact">Contacto</a>
+            <!--<a href="blog.html">Blog</a> -->
+            
+          </div>
+
+          <a href="#contact" class="button header__cta hide-for-mobile"
+            >Contáctanos</a
+          >
+        </div>
+      </nav>
+
+      <div class="header__menu has-fade">
+        <a href="/ACINTEK-WEBSITE/index.html">Inicio</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#feature">Servicios</a>
+        <a href="#sectors">Sectores</a>
+        <a href="#contact">Contacto</a>
+        <!--<a href="blog.html">Blog</a> -->
+        
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__image">
+          <!--<img class="hero__bg-mobile" src="images/bg-intro-mobile.svg" alt="Hero Background Mobile" /> -->
+          <img class="hero__mockups" src="images/noise-map-laptop.svg" alt="Product Mockups" />
+          <!--<img class="hero__bg-desktop" src="images/bg-intro-desktop.svg" alt="Hero Background Desktop" /> -->
+          
+        </div>
+
+        <div class="hero__text container--pall">
+          <h1>Especialistas en Soluciones Acústicas</h1>
+          <p>
+            Nos enfocamos en todo tipo de proyectos acústicos. En Acintek contarás con un servicio personalizado, 
+            asesoría técnica y un equipo de profesionales que te acompañarán en cada etapa del proyecto. 
+          </p>
+          <a href="#contact" class="button hero__cta">Solicita una cotización</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container container--pall">
+        
+        <div class="about__header">
+          <h2 class="about__title">
+            Sobre <span>Nosotros</span>
+          </h2>
+          <p class="about__intro">
+            En Acintek brindamos soluciones acústicas integrales, combinando
+            experiencia técnica y atención personalizada para cada proyecto.
+          </p>
+        </div>
+
+        <div class="about__content">
+          <div class="about__image">
+            <video autoplay muted loop playsinline>
+              <source src="images/about-video.mp4" type="video/mp4" />
+              <img src="images/about-image.svg" alt="Sobre Nosotros" />
+            </video>
+          </div>
+
+          <div class="about__text">
+            <div class="about__items">
+              <div class="about__item">
+                <div class="about__icon">
+                  <img src="images/mision-icon.svg" alt="Misión" />
+                </div>
+                <div class="about__info">
+                  <div class="about__item-title">Misión</div>
+                  <div class="about__desc">
+                    Ofrecer soluciones innovadoras y sostenibles en acústica, audio y tecnología,
+                    adaptadas a las necesidades del cliente, garantizando confort sonoro,
+                    eficiencia energética y alto desempeño técnico en cada proyecto.
+                  </div>
+                </div>
+              </div>
+
+              <div class="about__item">
+                <div class="about__icon">
+                  <img src="images/vision-icon.svg" alt="Visión" />
+                </div>
+                <div class="about__info">
+                  <div class="about__item-title">Visión</div>
+                  <div class="about__desc">
+                    Para 2030 nos consolidaremos como la empresa líder en la región Caribe
+                    en soluciones de acústica arquitectónica, control de ruido y sistemas
+                    tecnológicos inteligentes, expandiendo nuestros servicios a nivel regional
+                    y nacional para posicionarnos como un referente de innovación y sostenibilidad.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feature" class="feature">
+      <div class="feature__content container container--pall">
+        <div class="feature__intro">
+          <h2>Nuestros <span>Servicios</span></h2>
+          <p>
+            Contamos con equipos de medición de última tecnología, softwares de modelación y predicción acústica, 
+            realizamos estudios acústicos in situ bajo estándares nacionales e internacionales.
+          </p>
+        </div>
+
+        <div class="feature__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/building-acoustics-icon.svg" />
+            </div>
+            <div class="feature__title">Aislamiento Acústico</div>
+            <div class="feature__description">
+              Diseñamos soluciones de aislamiento acústico en muros, techos, pisos, ventanas y puertas, 
+              reduciendo transmisión aérea y/o de impacto. 
+              Seleccionamos materiales certificados y verificamos resultados mediante mediciones in situ bajo procedimientos normativos.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/room-acoustics-icon.svg" />
+            </div>
+            <div class="feature__title">Acondicionamiento Acústico</div>
+            <div class="feature__description">
+              Optimizamos la acústica interior con paneles, difusores y cielos acústicos, controlando reverberación, eco y claridad. 
+              Modelamos el recinto y definimos acabados para confort, inteligibilidad y estética.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon">
+              <img src="images/noise-control-icon.svg" />
+            </div>
+            <div class="feature__title">Control de Ruido y Vibraciones</div>
+            <div class="feature__description">
+              Evaluamos fuentes industriales y de edificación, proponiendo controles de ruido y vibraciones: silenciadores, 
+              encapsulados, aisladores y bases inerciales. 
+              Cumplimos límites normativos y validamos con monitoreo y reportes.
+            </div>
+          </div>
+
+          <div class="feature__item">
+            <div class="feature__icon"><img src="images/Electroacoustical-icon.svg" /></div>
+            <div class="feature__title">Diseño e Integración Electroacústica</div>
+            <div class="feature__description">
+              Realizamos diseño electroacústico de audio ambiental, megafonía y evacuación: selección de equipos, ubicación de altavoces, 
+              rutas de cableado y simulaciones de cobertura SPL/STI, asegurando inteligibilidad, redundancia y puesta en marcha.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectors" class="sectors">
+      <div class="sectors__content container container--pall">
+        <div class="sectors__header">
+          <h2>Nuestros <span>Sectores</span></h2>
+          <p>Contamos con experiencia en soluciones acústicas para múltiples industrias</p>
+        </div>
+
+        <div class="sectors__list">
+          <a href="sectors/residencial.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Residencial</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Residencial</h3>
+              <p class="sectors__desc">
+                Soluciones de aislamiento, acondicionamiento acústico y confort sonoro para viviendas y espacios residenciales.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/comercial.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Comercial</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Comercial</h3>
+              <p class="sectors__desc">
+                Diseño y optimización acústica para oficinas, locales y espacios comerciales con enfoque funcional y estético.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/industrial.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Industrial</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Industrial</h3>
+              <p class="sectors__desc">
+                Control de ruido, aislamiento y soluciones técnicas para plantas, maquinaria y entornos de operación industrial.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/educativo.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Educativo</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Educativo</h3>
+              <p class="sectors__desc">
+                Mejoramos la inteligibilidad y el confort acústico en aulas, auditorios y entornos de aprendizaje.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/salud.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Cuidado de la Salud</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Cuidado de la Salud</h3>
+              <p class="sectors__desc">
+                Soluciones acústicas para hospitales, clínicas y consultorios, priorizando bienestar, privacidad y control del ruido.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/ocio-turismo.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Ocio y Turismo</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Ocio y Turismo</h3>
+              <p class="sectors__desc">
+                Diseño acústico para hoteles, restaurantes, bares y espacios recreativos que buscan una mejor experiencia sonora.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/transporte.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Transporte e Infraestructura</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Transporte e Infraestructura</h3>
+              <p class="sectors__desc">
+                Evaluación y mitigación acústica en proyectos viales, terminales, corredores logísticos e infraestructura urbana.
+              </p>
+            </div>
+          </a>
+
+          <a href="sectors/energia.html" class="sectors__item">
+            <div class="sectors__top">
+              <span class="sectors__top-title">Energía</span>
+            </div>
+            <div class="sectors__body">
+              <h3 class="sectors__name">Energía</h3>
+              <p class="sectors__desc">
+                Control acústico y análisis técnico para plantas de generación, subestaciones y proyectos energéticos.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+   
+
+    <section class="articles hidden-maintenance">
+      <div class="article__content container container--pall">
+        <h2>Últimos Artículos</h2>
+        <div class="article__grid">
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/nor145-portrait.png')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">Por Acintek</div>
+              <div class="article__title">
+                Conoce el Sonómetro Norsonic Nor145
+              </div>
+              <div class="article__description">
+                El Norsonic Nor145 es un sonómetro integrador Clase 1, 
+                orientado a campañas exigentes de monitoreo de...
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-restaurant.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Wilson Hutton</div>
+              <div class="article__title">
+                Treat yourself without worrying about money
+              </div>
+              <div class="article__description">
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. That means you …
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-plane.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Wilson Hutton</div>
+              <div class="article__title">
+                Take your Easybank card wherever you go
+              </div>
+              <div class="article__description">
+                We want you to enjoy your travels. This is why we don’t charge
+                any fees on purchases while you’re abroad. We’ll even show you …
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="article__item">
+            <div
+              class="article__image"
+              style="background-image: url('images/image-confetti.jpg')"
+            ></div>
+            <div class="article__text">
+              <div class="article__author">By Claire Robinson</div>
+              <div class="article__title">
+                Our invite-only Beta accounts are now live!
+              </div>
+              <div class="article__description">
+                After a lot of hard work by the whole team, we’re excited to
+                launch our closed beta. It’s easy to request an invite through
+                the site …
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact__content container container--pall">
+        <div class="contact__header">
+          <h2>Ponte en <span>Contacto</span></h2>
+          <p>
+            Cuéntanos sobre tu proyecto y te ayudaremos a encontrar la mejor solución
+            en acústica, audio y tecnología.
+          </p>
+        </div>
+
+        <div class="contact__layout">
+          <div class="contact__visual">
+            <!-- Reemplaza el src por tu imagen real -->
+            <img src="images/sonometro+dodecaedro.png" alt="Asesor ACINTEK" />
+          </div>
+
+          <div class="contact__card">
+            <form id="contact-form" class="contact__form" >
+
+              <input type="hidden" name="access_key" value="3b3a1395-ba0f-4187-b2bb-29a84d0bb438" />
+              <input type="hidden" name="subject" value="Nuevo lead desde la web de ACINTEK" />
+              <input type="hidden" name="from_name" value="Sitio web ACINTEK" />
+              
+
+              <!-- Honeypot anti-spam -->
+              <input type="checkbox" name="botcheck" style="display: none;" tabindex="-1" autocomplete="off" />
+
+              <div class="contact__row">
+                <div class="contact__field">
+                  <label for="contact-name">Nombre Completo <span>*</span></label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    placeholder="Pedro Gómez"
+                    required
+                  />
+                </div>
+
+                <div class="contact__field">
+                  <label for="contact-phone">Teléfono <span>*</span></label>
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    name="phone"
+                    placeholder="+57 320 411 3215"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-email">Correo Electrónico <span>*</span></label>
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="correo@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-service">Servicio de Interés <span>*</span></label>
+                <select id="contact-service" name="service" required>
+                  <option value="" selected disabled>Selecciona un servicio</option>
+                  <option value="aislamiento-acustico">Aislamiento acústico</option>
+                  <option value="acondicionamiento-acustico">Acondicionamiento acústico</option>
+                  <option value="control-de-ruido">Control de Ruido</option>
+                  <option value="diseno-electroacustico">Diseño Electroacústico</option>
+                  <option value="consultoria-acustica">Consultoría Acústica</option>
+                </select>
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-message">Descripción del Proyecto <span>*</span></label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="6"
+                  placeholder="Cuéntanos sobre tu proyecto"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="button contact__button">
+                <span>Enviar Solicitud</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+                  class="lucide lucide-send ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform">
+                  <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                  </path>
+                  <path d="m21.854 2.147-10.94 10.939"></path>
+                </svg>
+              </button>
+              <p id="contact-form-message" class="contact__form-message" aria-live="polite"></p>
+              <p class="contact__note">
+                * Campos obligatorios. Responderemos en menos de 24 horas.
+              </p>
+              <p class="contact__whatsapp">
+                O chatea con nosotros en WhatsApp
+                <a
+                  href="https://wa.me/573233372426?text=Hola%20ACINTEK,%20quiero%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Escríbenos aquí
+                </a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <a class="footer__logo" href="#" data-home-link>
+          <img src="images/logotipo-acintek-neg.svg" />
+        </a>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/profile.php?id=61588339950031" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <title>Facebook</title>
+              <path
+                fill="#FFF"
+                d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"
+              />
+            </svg>
+          </a>
+         
+          <a href="https://www.instagram.com/acintek/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
+              <title>Instagram</title>
+              <path
+                fill="#FFF"
+                d="M10.333 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.976 1.409 4.1 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.058 4.042-.124 2.687-1.386 3.975-4.099 4.099-1.055.048-1.37.058-4.042.058-2.67 0-2.986-.01-4.04-.058-2.717-.124-3.976-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zm0-1.802C7.618 0 7.278.012 6.211.06 2.579.227.56 2.242.394 5.877.345 6.944.334 7.284.334 10s.011 3.057.06 4.123c.166 3.632 2.181 5.65 5.816 5.817 1.068.048 1.408.06 4.123.06 2.716 0 3.057-.012 4.124-.06 3.628-.167 5.651-2.182 5.816-5.817.049-1.066.06-1.407.06-4.123s-.011-3.056-.06-4.122C20.11 2.249 18.093.228 14.458.06 13.39.01 13.049 0 10.333 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.339-9.87a1.2 1.2 0 10-.001 2.4 1.2 1.2 0 000-2.4z"
+              />
+            </svg>
+          </a>
+
+          <a href="https://wa.me/573233372426?text=Hola%20ACINTEK,%20quiero%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32">
+              <title>WhatsApp</title>
+              <path
+                fill="#FFF"
+                d="M16.01 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.47 1.72 6.42L3.2 28.8l6.55-1.69a12.75 12.75 0 0 0 6.25 1.6h.01c7.06 0 12.79-5.73 12.79-12.8S23.08 3.2 16.01 3.2zm0 23.39h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-3.89 1 .99-3.79-.25-.39a10.59 10.59 0 0 1-1.63-5.68c0-5.87 4.77-10.64 10.64-10.64 2.84 0 5.51 1.11 7.52 3.12a10.56 10.56 0 0 1 3.11 7.52c0 5.87-4.77 10.64-10.63 10.64zm5.81-7.94c-.32-.16-1.88-.93-2.17-1.04-.29-.1-.5-.16-.71.16-.21.31-.81 1.04-1 1.25-.18.21-.37.24-.69.08-.32-.16-1.34-.49-2.55-1.56-.94-.84-1.58-1.87-1.76-2.19-.18-.31-.02-.48.14-.64.14-.14.32-.37.48-.55.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.72-.98-2.35-.26-.63-.52-.54-.71-.55h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.63 0 1.55 1.13 3.05 1.29 3.26.16.21 2.22 3.39 5.37 4.76.75.32 1.33.51 1.79.66.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.14-1.51.26-.74.26-1.38.18-1.51-.08-.13-.29-.21-.61-.37z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer__links col1">
+          <a href="#hero">Inicio</a>
+          <a href="#about">Sobre Nosotros</a>
+          <a href="#feature">Servicios</a>
+          
+          <!--<a href="#">Blog</a>-->
+        </div>
+
+        <div class="footer__links col2">
+          
+          <a href="#sectors">Sectores</a>
+          <a href="#contact">Contacto</a>
+          <a href="politica-privacidad.html">Politica de Privacidad</a>
+        </div>
+
+        <div class="footer__cta">
+          <a href="#contact" class="button">Contáctanos</a>
+          <div class="footer__contact-info">
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <strong>Teléfono :</strong> +57 (323) 337-2426 | +57 (320) 696-2791
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              <strong>Email:</strong> contacto@acintek.com
+            </p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <strong>Cobertura:</strong> Dpto. del Atlántico, Colombia
+            </p>
+          </div>
+        </div>
+
+        <div class="footer__copyright">
+          &copy; Acintek. Todos los derechos reservados.
+        </div>
+      </div>
+      
+    </footer>
+
+    <script src="app/js/script.js"></script>
+    <button class="back-to-top" aria-label="Volver arriba" title="Volver arriba">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M12 4L12 20" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 10L12 4L18 10" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </body>
+</html>

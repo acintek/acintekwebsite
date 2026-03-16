@@ -1,0 +1,85 @@
+.hero {
+  background-color: $veryLightGray;
+  padding-top: 2rem;
+
+  .container {
+
+    @include breakpoint-up(large){    
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    min-height: 19.5rem;
+    overflow: hidden;
+
+    @include breakpoint-up(medium){
+      min-height: 25rem;
+    }
+
+    @include breakpoint-up(large){
+      flex: 3;
+      order: 2;
+      height: 41rem;
+    }
+
+    img {
+      position: absolute;
+      width: 90%;
+      height: 80%;
+      object-fit: scale-down;
+      object-position: center;
+    }
+  }
+
+  &__bg-mobile {
+    display: block;
+
+    @include breakpoint-up(large){
+      display: none;
+    }
+  }
+
+  &__bg-desktop {
+    display: none;
+
+    @include breakpoint-up(large){
+      display: block;
+    }
+  }
+
+  &__mockups {
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: contain;
+
+    @include breakpoint-up(medium){
+      width: 52%;
+    }
+
+    @include breakpoint-up(large){
+      width: 94%;
+      height: auto;
+      bottom: auto;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      left: 50%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    @include breakpoint-up(large){
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+  }
+}

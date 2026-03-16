@@ -1,0 +1,65 @@
+.policy {
+  background-color: $veryLightGray;
+  padding: 4rem 1.5rem;
+
+  @include breakpoint-up(large) {
+    padding: 4rem 1.5rem;
+  }
+
+  &__content {
+    max-width: 69.375rem;
+    margin: 0 auto;
+    color: hsl(233, 8%, 62%);
+    line-height: 1.6;
+
+    h1 {
+      color: $darkBlue;
+      font-size: 2.25rem;
+      margin-bottom: 2rem;
+      margin-top: 0;
+
+      @include breakpoint-up(large) {
+        font-size: 2.75rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    h2 {
+      color: $darkBlue;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+
+      @include breakpoint-up(large) {
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+      //text-align: justify;
+     
+      
+
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 0;
+      }
+
+      @include breakpoint-up(large) {
+        margin-bottom: 0.5rem;
+        font-size: $font-sm;
+      }
+    }
+
+    br {
+      display: block;
+      content: "";
+      margin: 0.5rem 0;
+    }
+  }
+}
